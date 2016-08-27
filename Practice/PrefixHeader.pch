@@ -1,0 +1,16 @@
+//
+//  PrefixHeader.pch
+//  Practice
+//
+//  Created by 赵麦 on 8/27/16.
+//  Copyright © 2016 Zmy. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define appGreen [UIColor colorWithRed:54/255.0 green:166/255.0 blue:113/255.0 alpha:1.0]
+
+
+
+#endif /* PrefixHeader_pch */
