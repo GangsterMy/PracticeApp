@@ -9,6 +9,9 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#define navBar self.navigationController.navigationBar
+#define navItem self.navigationItem
+
 #define appGreen [UIColor colorWithRed:54/255.0 green:166/255.0 blue:113/255.0 alpha:1.0]
 
 

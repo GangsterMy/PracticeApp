@@ -7,26 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F248CCC1D72CA6500821B5F /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F248CCB1D72CA6500821B5F /* libicucore.A.dylib */; };
+		0F248CCE1D72CA8D00821B5F /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F248CCD1D72CA8D00821B5F /* libstdc++.6.0.9.dylib */; };
+		0F248CD01D72CA9E00821B5F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F248CCF1D72CA9E00821B5F /* MessageUI.framework */; };
+		0F248CD21D72CAAD00821B5F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F248CD11D72CAAD00821B5F /* JavaScriptCore.framework */; };
+		0F248CD51D72D77000821B5F /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F248CD41D72D77000821B5F /* RegisterViewController.m */; };
+		0F248CD81D730F0300821B5F /* VertificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F248CD71D730F0300821B5F /* VertificationViewController.m */; };
 		0FBC33B81D7011EA005A9E96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC33B71D7011EA005A9E96 /* main.m */; };
 		0FBC33BB1D7011EA005A9E96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC33BA1D7011EA005A9E96 /* AppDelegate.m */; };
-		0FBC33BE1D7011EA005A9E96 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC33BD1D7011EA005A9E96 /* ViewController.m */; };
+		0FBC33BE1D7011EA005A9E96 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC33BD1D7011EA005A9E96 /* LoginViewController.m */; };
 		0FBC33C11D7011EA005A9E96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FBC33BF1D7011EA005A9E96 /* Main.storyboard */; };
 		0FBC33C31D7011EA005A9E96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FBC33C21D7011EA005A9E96 /* Assets.xcassets */; };
 		0FBC33C61D7011EA005A9E96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FBC33C41D7011EA005A9E96 /* LaunchScreen.storyboard */; };
+		0FBC33D11D72C6F8005A9E96 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBC33CF1D72C6F8005A9E96 /* MOBFoundation.framework */; };
+		0FBC33D21D72C6F8005A9E96 /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBC33D01D72C6F8005A9E96 /* SMS_SDK.framework */; };
+		0FBC33D41D72CA11005A9E96 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBC33D31D72CA11005A9E96 /* libz.1.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F248CCB1D72CA6500821B5F /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = /usr/lib/libicucore.A.dylib; sourceTree = "<absolute>"; };
+		0F248CCD1D72CA8D00821B5F /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "/usr/lib/libstdc++.6.0.9.dylib"; sourceTree = "<absolute>"; };
+		0F248CCF1D72CA9E00821B5F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		0F248CD11D72CAAD00821B5F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		0F248CD31D72D77000821B5F /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		0F248CD41D72D77000821B5F /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		0F248CD61D730F0300821B5F /* VertificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertificationViewController.h; sourceTree = "<group>"; };
+		0F248CD71D730F0300821B5F /* VertificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VertificationViewController.m; sourceTree = "<group>"; };
 		0FBC33B31D7011EA005A9E96 /* Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FBC33B71D7011EA005A9E96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0FBC33B91D7011EA005A9E96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0FBC33BA1D7011EA005A9E96 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0FBC33BC1D7011EA005A9E96 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0FBC33BD1D7011EA005A9E96 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0FBC33BC1D7011EA005A9E96 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		0FBC33BD1D7011EA005A9E96 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		0FBC33C01D7011EA005A9E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FBC33C21D7011EA005A9E96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FBC33C51D7011EA005A9E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FBC33C71D7011EA005A9E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FBC33CD1D71D60A005A9E96 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0FBC33CF1D72C6F8005A9E96 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
+		0FBC33D01D72C6F8005A9E96 /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
+		0FBC33D31D72CA11005A9E96 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = /usr/lib/libz.1.dylib; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +54,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F248CD21D72CAAD00821B5F /* JavaScriptCore.framework in Frameworks */,
+				0F248CD01D72CA9E00821B5F /* MessageUI.framework in Frameworks */,
+				0F248CCE1D72CA8D00821B5F /* libstdc++.6.0.9.dylib in Frameworks */,
+				0F248CCC1D72CA6500821B5F /* libicucore.A.dylib in Frameworks */,
+				0FBC33D41D72CA11005A9E96 /* libz.1.dylib in Frameworks */,
+				0FBC33D11D72C6F8005A9E96 /* MOBFoundation.framework in Frameworks */,
+				0FBC33D21D72C6F8005A9E96 /* SMS_SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,10 +86,15 @@
 		0FBC33B51D7011EA005A9E96 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				0FBC33CE1D72C6F8005A9E96 /* SMS_SDK */,
 				0FBC33B91D7011EA005A9E96 /* AppDelegate.h */,
 				0FBC33BA1D7011EA005A9E96 /* AppDelegate.m */,
-				0FBC33BC1D7011EA005A9E96 /* ViewController.h */,
-				0FBC33BD1D7011EA005A9E96 /* ViewController.m */,
+				0FBC33BC1D7011EA005A9E96 /* LoginViewController.h */,
+				0FBC33BD1D7011EA005A9E96 /* LoginViewController.m */,
+				0F248CD31D72D77000821B5F /* RegisterViewController.h */,
+				0F248CD41D72D77000821B5F /* RegisterViewController.m */,
+				0F248CD61D730F0300821B5F /* VertificationViewController.h */,
+				0F248CD71D730F0300821B5F /* VertificationViewController.m */,
 				0FBC33BF1D7011EA005A9E96 /* Main.storyboard */,
 				0FBC33C21D7011EA005A9E96 /* Assets.xcassets */,
 				0FBC33C41D7011EA005A9E96 /* LaunchScreen.storyboard */,
@@ -79,6 +111,20 @@
 				0FBC33B71D7011EA005A9E96 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0FBC33CE1D72C6F8005A9E96 /* SMS_SDK */ = {
+			isa = PBXGroup;
+			children = (
+				0F248CD11D72CAAD00821B5F /* JavaScriptCore.framework */,
+				0F248CCF1D72CA9E00821B5F /* MessageUI.framework */,
+				0F248CCD1D72CA8D00821B5F /* libstdc++.6.0.9.dylib */,
+				0F248CCB1D72CA6500821B5F /* libicucore.A.dylib */,
+				0FBC33D31D72CA11005A9E96 /* libz.1.dylib */,
+				0FBC33CF1D72C6F8005A9E96 /* MOBFoundation.framework */,
+				0FBC33D01D72C6F8005A9E96 /* SMS_SDK.framework */,
+			);
+			path = SMS_SDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +197,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FBC33BE1D7011EA005A9E96 /* ViewController.m in Sources */,
+				0FBC33BE1D7011EA005A9E96 /* LoginViewController.m in Sources */,
 				0FBC33BB1D7011EA005A9E96 /* AppDelegate.m in Sources */,
 				0FBC33B81D7011EA005A9E96 /* main.m in Sources */,
+				0F248CD81D730F0300821B5F /* VertificationViewController.m in Sources */,
+				0F248CD51D72D77000821B5F /* RegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +319,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Practice/SMS_SDK",
+				);
 				INFOPLIST_FILE = Practice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.universal.zmy.Practice;
@@ -282,6 +334,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Practice/SMS_SDK",
+				);
 				INFOPLIST_FILE = Practice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.universal.zmy.Practice;
@@ -308,6 +364,7 @@
 				0FBC33CC1D7011EA005A9E96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
