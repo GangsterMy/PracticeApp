@@ -8,9 +8,11 @@
 
 #import "RegisterViewController.h"
 #import "LoginViewController.h"
+#import "VertificationViewController.h"
 #import <SMS_SDK/SMSSDK.h>
 
-@interface RegisterViewController ()
+@interface RegisterViewController () <UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *RegionCode;
 
 @end
 
@@ -18,23 +20,33 @@
 
 - (IBAction)getVertificationCode:(id)sender {
 
-    [SMSSDK getVerificationCodeByMethod:0 phoneNumber:_phoneNum.text zone:@"86" customIdentifier:nil result:^(NSError *error) {
-        if (!error) {
-            NSLog(@"获取验证码成功");
-        } else {
-            NSLog(@"获取验证码失败");
-        }
-    }];
+//    [SMSSDK getVerificationCodeByMethod:0 phoneNumber:_phoneNum.text zone:@"86" customIdentifier:nil result:^(NSError *error) {
+//        if (!error) {
+//            PALog(@"获取验证码成功");
+//        } else {
+//            PALog(@"获取验证码失败");
+//        }
+//    }];
     
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"getVertificationCodeSegue"]) {
+        VertificationViewController *verVC = (VertificationViewController *)segue.destinationViewController;
+        verVC.text = self.phoneNum.text;
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    navItem.title = @"注册";
-    [navBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil]];
-    navItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.navigationItem.title = @"注册";
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     
+    self.RegionCode.delegate = self;
+}
+
+-(BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
+    return NO;
 }
 
 - (void)didReceiveMemoryWarning {

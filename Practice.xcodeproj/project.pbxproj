@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F21A5381D741ACE006F5EB3 /* SetPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F21A5371D741ACE006F5EB3 /* SetPwdViewController.m */; };
+		0F21A5441D75C9E4006F5EB3 /* NavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F21A5431D75C9E4006F5EB3 /* NavController.m */; };
+		0F21A5491D767EF9006F5EB3 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F21A5481D767EF9006F5EB3 /* NavigationController.m */; };
+		0F21A54C1D76B446006F5EB3 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F21A54B1D76B446006F5EB3 /* LoginVC.m */; };
+		0F21A5521D76B65D006F5EB3 /* iconTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F21A5511D76B65D006F5EB3 /* iconTextField.m */; };
 		0F248CCC1D72CA6500821B5F /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F248CCB1D72CA6500821B5F /* libicucore.A.dylib */; };
 		0F248CCE1D72CA8D00821B5F /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F248CCD1D72CA8D00821B5F /* libstdc++.6.0.9.dylib */; };
 		0F248CD01D72CA9E00821B5F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F248CCF1D72CA9E00821B5F /* MessageUI.framework */; };
@@ -25,6 +30,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F21A5361D741ACE006F5EB3 /* SetPwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetPwdViewController.h; sourceTree = "<group>"; };
+		0F21A5371D741ACE006F5EB3 /* SetPwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetPwdViewController.m; sourceTree = "<group>"; };
+		0F21A5421D75C9E4006F5EB3 /* NavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavController.h; sourceTree = "<group>"; };
+		0F21A5431D75C9E4006F5EB3 /* NavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavController.m; sourceTree = "<group>"; };
+		0F21A5471D767EF9006F5EB3 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		0F21A5481D767EF9006F5EB3 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		0F21A54A1D76B446006F5EB3 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		0F21A54B1D76B446006F5EB3 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		0F21A5501D76B65D006F5EB3 /* iconTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iconTextField.h; sourceTree = "<group>"; };
+		0F21A5511D76B65D006F5EB3 /* iconTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iconTextField.m; sourceTree = "<group>"; };
 		0F248CCB1D72CA6500821B5F /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = /usr/lib/libicucore.A.dylib; sourceTree = "<absolute>"; };
 		0F248CCD1D72CA8D00821B5F /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "/usr/lib/libstdc++.6.0.9.dylib"; sourceTree = "<absolute>"; };
 		0F248CCF1D72CA9E00821B5F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
@@ -67,6 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F21A5461D767E72006F5EB3 /* Trash */ = {
+			isa = PBXGroup;
+			children = (
+				0F21A5421D75C9E4006F5EB3 /* NavController.h */,
+				0F21A5431D75C9E4006F5EB3 /* NavController.m */,
+				0FBC33BC1D7011EA005A9E96 /* LoginViewController.h */,
+				0FBC33BD1D7011EA005A9E96 /* LoginViewController.m */,
+				0F248CD31D72D77000821B5F /* RegisterViewController.h */,
+				0F248CD41D72D77000821B5F /* RegisterViewController.m */,
+				0F248CD61D730F0300821B5F /* VertificationViewController.h */,
+				0F248CD71D730F0300821B5F /* VertificationViewController.m */,
+				0F21A5361D741ACE006F5EB3 /* SetPwdViewController.h */,
+				0F21A5371D741ACE006F5EB3 /* SetPwdViewController.m */,
+			);
+			name = Trash;
+			sourceTree = "<group>";
+		};
 		0FBC33AA1D7011EA005A9E96 = {
 			isa = PBXGroup;
 			children = (
@@ -86,15 +118,16 @@
 		0FBC33B51D7011EA005A9E96 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				0F21A5461D767E72006F5EB3 /* Trash */,
 				0FBC33CE1D72C6F8005A9E96 /* SMS_SDK */,
 				0FBC33B91D7011EA005A9E96 /* AppDelegate.h */,
 				0FBC33BA1D7011EA005A9E96 /* AppDelegate.m */,
-				0FBC33BC1D7011EA005A9E96 /* LoginViewController.h */,
-				0FBC33BD1D7011EA005A9E96 /* LoginViewController.m */,
-				0F248CD31D72D77000821B5F /* RegisterViewController.h */,
-				0F248CD41D72D77000821B5F /* RegisterViewController.m */,
-				0F248CD61D730F0300821B5F /* VertificationViewController.h */,
-				0F248CD71D730F0300821B5F /* VertificationViewController.m */,
+				0F21A5471D767EF9006F5EB3 /* NavigationController.h */,
+				0F21A5481D767EF9006F5EB3 /* NavigationController.m */,
+				0F21A54A1D76B446006F5EB3 /* LoginVC.h */,
+				0F21A54B1D76B446006F5EB3 /* LoginVC.m */,
+				0F21A5501D76B65D006F5EB3 /* iconTextField.h */,
+				0F21A5511D76B65D006F5EB3 /* iconTextField.m */,
 				0FBC33BF1D7011EA005A9E96 /* Main.storyboard */,
 				0FBC33C21D7011EA005A9E96 /* Assets.xcassets */,
 				0FBC33C41D7011EA005A9E96 /* LaunchScreen.storyboard */,
@@ -199,7 +232,12 @@
 			files = (
 				0FBC33BE1D7011EA005A9E96 /* LoginViewController.m in Sources */,
 				0FBC33BB1D7011EA005A9E96 /* AppDelegate.m in Sources */,
+				0F21A5521D76B65D006F5EB3 /* iconTextField.m in Sources */,
+				0F21A54C1D76B446006F5EB3 /* LoginVC.m in Sources */,
 				0FBC33B81D7011EA005A9E96 /* main.m in Sources */,
+				0F21A5441D75C9E4006F5EB3 /* NavController.m in Sources */,
+				0F21A5381D741ACE006F5EB3 /* SetPwdViewController.m in Sources */,
+				0F21A5491D767EF9006F5EB3 /* NavigationController.m in Sources */,
 				0F248CD81D730F0300821B5F /* VertificationViewController.m in Sources */,
 				0F248CD51D72D77000821B5F /* RegisterViewController.m in Sources */,
 			);

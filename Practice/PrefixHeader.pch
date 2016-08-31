@@ -9,10 +9,16 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-#define navBar self.navigationController.navigationBar
-#define navItem self.navigationItem
+#ifdef DEBUG // 处于开发阶段
+#define PALog(...) NSLog(__VA_ARGS__)
+#else //处于发布阶段
+#define PALog(...)
+#endif
+
 
 #define appGreen [UIColor colorWithRed:54/255.0 green:166/255.0 blue:113/255.0 alpha:1.0]
+
+#define DarkBlue [UIColor colorWithRed:23/255.0 green:44/255.0 blue:63/255.0 alpha:1.0]
 
 
 

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RegisterViewController.h"
 
 @interface VertificationViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *vertificationCode;
 @property (weak, nonatomic) IBOutlet UILabel *phoneNum;
+@property (nonatomic, copy) NSString *text;
 
 @end
