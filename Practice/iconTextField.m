@@ -17,7 +17,7 @@
 // Placeholder position
 - (CGRect)textRectForBounds:(CGRect)bounds {
     CGRect rect = [super textRectForBounds:bounds];
-    UIEdgeInsets insets = UIEdgeInsetsMake(10, 40, 10, 0);
+    UIEdgeInsets insets = UIEdgeInsetsMake(10, 40, 10, 5);
     
     return UIEdgeInsetsInsetRect(rect, insets);
 }
@@ -25,7 +25,7 @@
 // Text position
 - (CGRect)editingRectForBounds:(CGRect)bounds {
     CGRect rect = [super editingRectForBounds:bounds];
-    UIEdgeInsets insets = UIEdgeInsetsMake(10, 40, 10, 0);
+    UIEdgeInsets insets = UIEdgeInsetsMake(10, 40, 10, 5);
     
     return UIEdgeInsetsInsetRect(rect, insets);
 }

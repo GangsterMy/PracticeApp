@@ -15,33 +15,31 @@
 @property (weak, nonatomic) IBOutlet UIButton *accountClear;
 @property (weak, nonatomic) IBOutlet UIButton *pwdClear;
 
-
 @end
 
 @implementation LoginVC
+- (IBAction)clearAccount:(id)sender {
+    _accountTF.text = @"";
+}
+- (IBAction)clearPwd:(id)sender {
+    _pwdTF.text = @"";
+}
+
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     _accountTF.rightView = _accountClear;
-    [_accountClear addTarget:self action:@selector(clearAccountTF) forControlEvents:UIControlEventTouchUpInside];
     _accountTF.rightViewMode = UITextFieldViewModeWhileEditing;
     
     _pwdTF.rightView = _pwdClear;
-    [_pwdTF addTarget:self action:@selector(clearPwdTF) forControlEvents:UIControlEventTouchUpInside];
     _pwdTF.rightViewMode = UITextFieldViewModeWhileEditing;
+
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+
 }
-
--(void)clearAccountTF {
-    _accountTF.text = @"";
-}
-
--(void)clearPwdTF {
-    _pwdTF.text = @"";
-}
-
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

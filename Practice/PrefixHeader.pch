@@ -19,6 +19,7 @@
 #define appGreen [UIColor colorWithRed:54/255.0 green:166/255.0 blue:113/255.0 alpha:1.0]
 
 #define DarkBlue [UIColor colorWithRed:23/255.0 green:44/255.0 blue:63/255.0 alpha:1.0]
+#define lightDarkBlue [UIColor colorWithRed:23/255.0 green:44/255.0 blue:63/255.0 alpha:0.8]
 
 
 

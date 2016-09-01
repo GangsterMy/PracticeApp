@@ -18,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [SMSSDK registerApp:@"168e8275dc760" withSecret:@"63030c3f16b5f51cb7adee5a3d6"];
+
     return YES;
 }
 

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0F21A5381D741ACE006F5EB3 /* SetPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F21A5371D741ACE006F5EB3 /* SetPwdViewController.m */; };
 		0F21A5441D75C9E4006F5EB3 /* NavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F21A5431D75C9E4006F5EB3 /* NavController.m */; };
-		0F21A5491D767EF9006F5EB3 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F21A5481D767EF9006F5EB3 /* NavigationController.m */; };
 		0F21A54C1D76B446006F5EB3 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F21A54B1D76B446006F5EB3 /* LoginVC.m */; };
 		0F21A5521D76B65D006F5EB3 /* iconTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F21A5511D76B65D006F5EB3 /* iconTextField.m */; };
 		0F248CCC1D72CA6500821B5F /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F248CCB1D72CA6500821B5F /* libicucore.A.dylib */; };
@@ -18,6 +17,8 @@
 		0F248CD21D72CAAD00821B5F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F248CD11D72CAAD00821B5F /* JavaScriptCore.framework */; };
 		0F248CD51D72D77000821B5F /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F248CD41D72D77000821B5F /* RegisterViewController.m */; };
 		0F248CD81D730F0300821B5F /* VertificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F248CD71D730F0300821B5F /* VertificationViewController.m */; };
+		0FBA070B1D77DEA20061D773 /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA070A1D77DEA20061D773 /* RegisterVC.m */; };
+		0FBA070E1D7879550061D773 /* VertificationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA070D1D7879550061D773 /* VertificationVC.m */; };
 		0FBC33B81D7011EA005A9E96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC33B71D7011EA005A9E96 /* main.m */; };
 		0FBC33BB1D7011EA005A9E96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC33BA1D7011EA005A9E96 /* AppDelegate.m */; };
 		0FBC33BE1D7011EA005A9E96 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC33BD1D7011EA005A9E96 /* LoginViewController.m */; };
@@ -34,8 +35,6 @@
 		0F21A5371D741ACE006F5EB3 /* SetPwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetPwdViewController.m; sourceTree = "<group>"; };
 		0F21A5421D75C9E4006F5EB3 /* NavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavController.h; sourceTree = "<group>"; };
 		0F21A5431D75C9E4006F5EB3 /* NavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavController.m; sourceTree = "<group>"; };
-		0F21A5471D767EF9006F5EB3 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
-		0F21A5481D767EF9006F5EB3 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		0F21A54A1D76B446006F5EB3 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		0F21A54B1D76B446006F5EB3 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		0F21A5501D76B65D006F5EB3 /* iconTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iconTextField.h; sourceTree = "<group>"; };
@@ -48,6 +47,10 @@
 		0F248CD41D72D77000821B5F /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		0F248CD61D730F0300821B5F /* VertificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertificationViewController.h; sourceTree = "<group>"; };
 		0F248CD71D730F0300821B5F /* VertificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VertificationViewController.m; sourceTree = "<group>"; };
+		0FBA07091D77DEA20061D773 /* RegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
+		0FBA070A1D77DEA20061D773 /* RegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
+		0FBA070C1D7879550061D773 /* VertificationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertificationVC.h; sourceTree = "<group>"; };
+		0FBA070D1D7879550061D773 /* VertificationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VertificationVC.m; sourceTree = "<group>"; };
 		0FBC33B31D7011EA005A9E96 /* Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FBC33B71D7011EA005A9E96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0FBC33B91D7011EA005A9E96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -122,10 +125,12 @@
 				0FBC33CE1D72C6F8005A9E96 /* SMS_SDK */,
 				0FBC33B91D7011EA005A9E96 /* AppDelegate.h */,
 				0FBC33BA1D7011EA005A9E96 /* AppDelegate.m */,
-				0F21A5471D767EF9006F5EB3 /* NavigationController.h */,
-				0F21A5481D767EF9006F5EB3 /* NavigationController.m */,
 				0F21A54A1D76B446006F5EB3 /* LoginVC.h */,
 				0F21A54B1D76B446006F5EB3 /* LoginVC.m */,
+				0FBA07091D77DEA20061D773 /* RegisterVC.h */,
+				0FBA070A1D77DEA20061D773 /* RegisterVC.m */,
+				0FBA070C1D7879550061D773 /* VertificationVC.h */,
+				0FBA070D1D7879550061D773 /* VertificationVC.m */,
 				0F21A5501D76B65D006F5EB3 /* iconTextField.h */,
 				0F21A5511D76B65D006F5EB3 /* iconTextField.m */,
 				0FBC33BF1D7011EA005A9E96 /* Main.storyboard */,
@@ -232,12 +237,13 @@
 			files = (
 				0FBC33BE1D7011EA005A9E96 /* LoginViewController.m in Sources */,
 				0FBC33BB1D7011EA005A9E96 /* AppDelegate.m in Sources */,
+				0FBA070E1D7879550061D773 /* VertificationVC.m in Sources */,
 				0F21A5521D76B65D006F5EB3 /* iconTextField.m in Sources */,
+				0FBA070B1D77DEA20061D773 /* RegisterVC.m in Sources */,
 				0F21A54C1D76B446006F5EB3 /* LoginVC.m in Sources */,
 				0FBC33B81D7011EA005A9E96 /* main.m in Sources */,
 				0F21A5441D75C9E4006F5EB3 /* NavController.m in Sources */,
 				0F21A5381D741ACE006F5EB3 /* SetPwdViewController.m in Sources */,
-				0F21A5491D767EF9006F5EB3 /* NavigationController.m in Sources */,
 				0F248CD81D730F0300821B5F /* VertificationViewController.m in Sources */,
 				0F248CD51D72D77000821B5F /* RegisterViewController.m in Sources */,
 			);
