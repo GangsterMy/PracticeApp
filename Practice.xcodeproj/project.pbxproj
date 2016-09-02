@@ -19,6 +19,11 @@
 		0F248CD81D730F0300821B5F /* VertificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F248CD71D730F0300821B5F /* VertificationViewController.m */; };
 		0FBA070B1D77DEA20061D773 /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA070A1D77DEA20061D773 /* RegisterVC.m */; };
 		0FBA070E1D7879550061D773 /* VertificationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA070D1D7879550061D773 /* VertificationVC.m */; };
+		0FBA07111D7918F10061D773 /* SetSecretVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07101D7918F10061D773 /* SetSecretVC.m */; };
+		0FBA07141D7918FD0061D773 /* FindSecret.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07131D7918FD0061D773 /* FindSecret.m */; };
+		0FBA07171D792D830061D773 /* SegmentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07161D792D830061D773 /* SegmentVC.m */; };
+		0FBA07231D79581B0061D773 /* FaultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07221D79581B0061D773 /* FaultVC.m */; };
+		0FBA07261D795F990061D773 /* UnitTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07251D795F990061D773 /* UnitTVC.m */; };
 		0FBC33B81D7011EA005A9E96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC33B71D7011EA005A9E96 /* main.m */; };
 		0FBC33BB1D7011EA005A9E96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC33BA1D7011EA005A9E96 /* AppDelegate.m */; };
 		0FBC33BE1D7011EA005A9E96 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC33BD1D7011EA005A9E96 /* LoginViewController.m */; };
@@ -51,6 +56,16 @@
 		0FBA070A1D77DEA20061D773 /* RegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
 		0FBA070C1D7879550061D773 /* VertificationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertificationVC.h; sourceTree = "<group>"; };
 		0FBA070D1D7879550061D773 /* VertificationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VertificationVC.m; sourceTree = "<group>"; };
+		0FBA070F1D7918F10061D773 /* SetSecretVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetSecretVC.h; sourceTree = "<group>"; };
+		0FBA07101D7918F10061D773 /* SetSecretVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetSecretVC.m; sourceTree = "<group>"; };
+		0FBA07121D7918FD0061D773 /* FindSecret.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindSecret.h; sourceTree = "<group>"; };
+		0FBA07131D7918FD0061D773 /* FindSecret.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindSecret.m; sourceTree = "<group>"; };
+		0FBA07151D792D830061D773 /* SegmentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentVC.h; sourceTree = "<group>"; };
+		0FBA07161D792D830061D773 /* SegmentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentVC.m; sourceTree = "<group>"; };
+		0FBA07211D79581B0061D773 /* FaultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaultVC.h; sourceTree = "<group>"; };
+		0FBA07221D79581B0061D773 /* FaultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaultVC.m; sourceTree = "<group>"; };
+		0FBA07241D795F990061D773 /* UnitTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTVC.h; sourceTree = "<group>"; };
+		0FBA07251D795F990061D773 /* UnitTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitTVC.m; sourceTree = "<group>"; };
 		0FBC33B31D7011EA005A9E96 /* Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FBC33B71D7011EA005A9E96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0FBC33B91D7011EA005A9E96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +146,16 @@
 				0FBA070A1D77DEA20061D773 /* RegisterVC.m */,
 				0FBA070C1D7879550061D773 /* VertificationVC.h */,
 				0FBA070D1D7879550061D773 /* VertificationVC.m */,
+				0FBA070F1D7918F10061D773 /* SetSecretVC.h */,
+				0FBA07101D7918F10061D773 /* SetSecretVC.m */,
+				0FBA07121D7918FD0061D773 /* FindSecret.h */,
+				0FBA07131D7918FD0061D773 /* FindSecret.m */,
+				0FBA07151D792D830061D773 /* SegmentVC.h */,
+				0FBA07161D792D830061D773 /* SegmentVC.m */,
+				0FBA07241D795F990061D773 /* UnitTVC.h */,
+				0FBA07251D795F990061D773 /* UnitTVC.m */,
+				0FBA07211D79581B0061D773 /* FaultVC.h */,
+				0FBA07221D79581B0061D773 /* FaultVC.m */,
 				0F21A5501D76B65D006F5EB3 /* iconTextField.h */,
 				0F21A5511D76B65D006F5EB3 /* iconTextField.m */,
 				0FBC33BF1D7011EA005A9E96 /* Main.storyboard */,
@@ -235,13 +260,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FBA07261D795F990061D773 /* UnitTVC.m in Sources */,
 				0FBC33BE1D7011EA005A9E96 /* LoginViewController.m in Sources */,
 				0FBC33BB1D7011EA005A9E96 /* AppDelegate.m in Sources */,
 				0FBA070E1D7879550061D773 /* VertificationVC.m in Sources */,
 				0F21A5521D76B65D006F5EB3 /* iconTextField.m in Sources */,
+				0FBA07231D79581B0061D773 /* FaultVC.m in Sources */,
 				0FBA070B1D77DEA20061D773 /* RegisterVC.m in Sources */,
 				0F21A54C1D76B446006F5EB3 /* LoginVC.m in Sources */,
 				0FBC33B81D7011EA005A9E96 /* main.m in Sources */,
+				0FBA07111D7918F10061D773 /* SetSecretVC.m in Sources */,
+				0FBA07171D792D830061D773 /* SegmentVC.m in Sources */,
+				0FBA07141D7918FD0061D773 /* FindSecret.m in Sources */,
 				0F21A5441D75C9E4006F5EB3 /* NavController.m in Sources */,
 				0F21A5381D741ACE006F5EB3 /* SetPwdViewController.m in Sources */,
 				0F248CD81D730F0300821B5F /* VertificationViewController.m in Sources */,
