@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F21A5381D741ACE006F5EB3 /* SetPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F21A5371D741ACE006F5EB3 /* SetPwdViewController.m */; };
-		0F21A5441D75C9E4006F5EB3 /* NavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F21A5431D75C9E4006F5EB3 /* NavController.m */; };
+		0F21A5441D75C9E4006F5EB3 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F21A5431D75C9E4006F5EB3 /* NavigationController.m */; };
 		0F21A54C1D76B446006F5EB3 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F21A54B1D76B446006F5EB3 /* LoginVC.m */; };
 		0F21A5521D76B65D006F5EB3 /* iconTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F21A5511D76B65D006F5EB3 /* iconTextField.m */; };
 		0F248CCC1D72CA6500821B5F /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F248CCB1D72CA6500821B5F /* libicucore.A.dylib */; };
@@ -24,6 +24,9 @@
 		0FBA07171D792D830061D773 /* SegmentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07161D792D830061D773 /* SegmentVC.m */; };
 		0FBA07231D79581B0061D773 /* FaultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07221D79581B0061D773 /* FaultVC.m */; };
 		0FBA07261D795F990061D773 /* UnitTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07251D795F990061D773 /* UnitTVC.m */; };
+		0FBA07291D7D0AA50061D773 /* NavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07281D7D0AA50061D773 /* NavController.m */; };
+		0FBA072C1D7D1DA80061D773 /* PracticeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA072B1D7D1DA80061D773 /* PracticeVC.m */; };
+		0FBA072F1D7D20CB0061D773 /* CheckFaultCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA072E1D7D20CB0061D773 /* CheckFaultCVC.m */; };
 		0FBC33B81D7011EA005A9E96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC33B71D7011EA005A9E96 /* main.m */; };
 		0FBC33BB1D7011EA005A9E96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC33BA1D7011EA005A9E96 /* AppDelegate.m */; };
 		0FBC33BE1D7011EA005A9E96 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC33BD1D7011EA005A9E96 /* LoginViewController.m */; };
@@ -38,8 +41,8 @@
 /* Begin PBXFileReference section */
 		0F21A5361D741ACE006F5EB3 /* SetPwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetPwdViewController.h; sourceTree = "<group>"; };
 		0F21A5371D741ACE006F5EB3 /* SetPwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetPwdViewController.m; sourceTree = "<group>"; };
-		0F21A5421D75C9E4006F5EB3 /* NavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavController.h; sourceTree = "<group>"; };
-		0F21A5431D75C9E4006F5EB3 /* NavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavController.m; sourceTree = "<group>"; };
+		0F21A5421D75C9E4006F5EB3 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		0F21A5431D75C9E4006F5EB3 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		0F21A54A1D76B446006F5EB3 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		0F21A54B1D76B446006F5EB3 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		0F21A5501D76B65D006F5EB3 /* iconTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iconTextField.h; sourceTree = "<group>"; };
@@ -66,6 +69,12 @@
 		0FBA07221D79581B0061D773 /* FaultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaultVC.m; sourceTree = "<group>"; };
 		0FBA07241D795F990061D773 /* UnitTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTVC.h; sourceTree = "<group>"; };
 		0FBA07251D795F990061D773 /* UnitTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitTVC.m; sourceTree = "<group>"; };
+		0FBA07271D7D0AA50061D773 /* NavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavController.h; sourceTree = "<group>"; };
+		0FBA07281D7D0AA50061D773 /* NavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavController.m; sourceTree = "<group>"; };
+		0FBA072A1D7D1DA80061D773 /* PracticeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PracticeVC.h; sourceTree = "<group>"; };
+		0FBA072B1D7D1DA80061D773 /* PracticeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PracticeVC.m; sourceTree = "<group>"; };
+		0FBA072D1D7D20CB0061D773 /* CheckFaultCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckFaultCVC.h; sourceTree = "<group>"; };
+		0FBA072E1D7D20CB0061D773 /* CheckFaultCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckFaultCVC.m; sourceTree = "<group>"; };
 		0FBC33B31D7011EA005A9E96 /* Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FBC33B71D7011EA005A9E96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0FBC33B91D7011EA005A9E96 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -103,8 +112,8 @@
 		0F21A5461D767E72006F5EB3 /* Trash */ = {
 			isa = PBXGroup;
 			children = (
-				0F21A5421D75C9E4006F5EB3 /* NavController.h */,
-				0F21A5431D75C9E4006F5EB3 /* NavController.m */,
+				0F21A5421D75C9E4006F5EB3 /* NavigationController.h */,
+				0F21A5431D75C9E4006F5EB3 /* NavigationController.m */,
 				0FBC33BC1D7011EA005A9E96 /* LoginViewController.h */,
 				0FBC33BD1D7011EA005A9E96 /* LoginViewController.m */,
 				0F248CD31D72D77000821B5F /* RegisterViewController.h */,
@@ -140,6 +149,8 @@
 				0FBC33CE1D72C6F8005A9E96 /* SMS_SDK */,
 				0FBC33B91D7011EA005A9E96 /* AppDelegate.h */,
 				0FBC33BA1D7011EA005A9E96 /* AppDelegate.m */,
+				0FBA07271D7D0AA50061D773 /* NavController.h */,
+				0FBA07281D7D0AA50061D773 /* NavController.m */,
 				0F21A54A1D76B446006F5EB3 /* LoginVC.h */,
 				0F21A54B1D76B446006F5EB3 /* LoginVC.m */,
 				0FBA07091D77DEA20061D773 /* RegisterVC.h */,
@@ -156,6 +167,10 @@
 				0FBA07251D795F990061D773 /* UnitTVC.m */,
 				0FBA07211D79581B0061D773 /* FaultVC.h */,
 				0FBA07221D79581B0061D773 /* FaultVC.m */,
+				0FBA072A1D7D1DA80061D773 /* PracticeVC.h */,
+				0FBA072B1D7D1DA80061D773 /* PracticeVC.m */,
+				0FBA072D1D7D20CB0061D773 /* CheckFaultCVC.h */,
+				0FBA072E1D7D20CB0061D773 /* CheckFaultCVC.m */,
 				0F21A5501D76B65D006F5EB3 /* iconTextField.h */,
 				0F21A5511D76B65D006F5EB3 /* iconTextField.m */,
 				0FBC33BF1D7011EA005A9E96 /* Main.storyboard */,
@@ -261,6 +276,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FBA07261D795F990061D773 /* UnitTVC.m in Sources */,
+				0FBA072C1D7D1DA80061D773 /* PracticeVC.m in Sources */,
+				0FBA07291D7D0AA50061D773 /* NavController.m in Sources */,
 				0FBC33BE1D7011EA005A9E96 /* LoginViewController.m in Sources */,
 				0FBC33BB1D7011EA005A9E96 /* AppDelegate.m in Sources */,
 				0FBA070E1D7879550061D773 /* VertificationVC.m in Sources */,
@@ -270,9 +287,10 @@
 				0F21A54C1D76B446006F5EB3 /* LoginVC.m in Sources */,
 				0FBC33B81D7011EA005A9E96 /* main.m in Sources */,
 				0FBA07111D7918F10061D773 /* SetSecretVC.m in Sources */,
+				0FBA072F1D7D20CB0061D773 /* CheckFaultCVC.m in Sources */,
 				0FBA07171D792D830061D773 /* SegmentVC.m in Sources */,
 				0FBA07141D7918FD0061D773 /* FindSecret.m in Sources */,
-				0F21A5441D75C9E4006F5EB3 /* NavController.m in Sources */,
+				0F21A5441D75C9E4006F5EB3 /* NavigationController.m in Sources */,
 				0F21A5381D741ACE006F5EB3 /* SetPwdViewController.m in Sources */,
 				0F248CD81D730F0300821B5F /* VertificationViewController.m in Sources */,
 				0F248CD51D72D77000821B5F /* RegisterViewController.m in Sources */,

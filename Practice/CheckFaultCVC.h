@@ -1,5 +1,5 @@
 //
-//  NavController.h
+//  CheckFaultCVC.h
 //  Practice
 //
 //  Created by 赵麦 on 9/5/16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NavController : UINavigationController
+@interface CheckFaultCVC : UICollectionViewController
 
 @end

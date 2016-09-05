@@ -757,7 +757,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APu-US-sNp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1258.5" y="3126.5"/>
+            <point key="canvasLocation" x="1258.5" y="3118.5"/>
         </scene>
         <!--SetSecrect-->
         <scene sceneID="gUk-HA-zqL">
@@ -1029,10 +1029,10 @@
             </objects>
             <point key="canvasLocation" x="2322" y="-899"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Nav Controller-->
         <scene sceneID="DvF-ws-6Xo">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zzR-hU-krc" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zzR-hU-krc" customClass="NavController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="back-arrow" id="H8v-mS-aPF">
@@ -1062,11 +1062,11 @@
                         <viewControllerLayoutGuide type="bottom" id="2jX-vd-D0E"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="m33-QM-U7r">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SMd-yJ-VCT" userLabel="haveFault">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tR4-OS-Eoe">
                                         <rect key="frame" x="88" y="96" width="200" height="250"/>
@@ -1083,6 +1083,7 @@
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcu-M2-2pp">
@@ -1101,9 +1102,6 @@
                                                 <integer key="value" value="4"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="regBtn:" destination="Hj2-ub-FRy" eventType="touchUpInside" id="Qir-qP-oJM"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
@@ -1115,7 +1113,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dqk-G7-Gjh" userLabel="noneFault">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="我的错题" translatesAutoresizingMaskIntoConstraints="NO" id="tQL-Xu-4js">
                                         <rect key="frame" x="112" y="125" width="150" height="150"/>
@@ -1153,13 +1151,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="faultNum" destination="tR4-OS-Eoe" id="iAq-oE-5zR"/>
                         <outlet property="haveFault" destination="SMd-yJ-VCT" id="XYy-JL-iHr"/>
                         <outlet property="noneFault" destination="dqk-G7-Gjh" id="VHP-04-rYZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JzH-bP-NEq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749.5" y="2641.5"/>
+            <point key="canvasLocation" x="1749.5" y="2713.5"/>
         </scene>
         <!--UnitTVC-->
         <scene sceneID="edr-Uj-8VD">
@@ -1207,7 +1206,92 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fsD-Fp-SFn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749.5" y="1896.5"/>
+            <point key="canvasLocation" x="1749.5" y="1868.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xkb-ac-40d">
+            <objects>
+                <viewController id="dcy-vF-1bQ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="n1G-5d-4BH"/>
+                        <viewControllerLayoutGuide type="bottom" id="FLT-Kw-xFQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7W7-0B-KaQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="完成-0" translatesAutoresizingMaskIntoConstraints="NO" id="f6Q-kW-TEQ">
+                                <rect key="frame" x="138" y="172" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="HzF-8T-1Af"/>
+                                    <constraint firstAttribute="height" constant="100" id="dio-gQ-ukX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜完成本单元练习" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETm-wZ-UZa">
+                                <rect key="frame" x="98" y="317" width="180" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBF-Wj-4OY">
+                                <rect key="frame" x="15" y="507" width="345" height="45"/>
+                                <color key="backgroundColor" red="0.090196078430000007" green="0.17254901959999999" blue="0.2470588235" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="APG-uh-3yG"/>
+                                    <constraint firstAttribute="width" constant="345" id="El4-8G-1BV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="我的错题">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="regBtn:" destination="Hj2-ub-FRy" eventType="touchUpInside" id="Ouh-c2-22k"/>
+                                    <segue destination="FAM-69-I43" kind="show" id="tc1-Yx-1gD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnf-Qq-kbr">
+                                <rect key="frame" x="15" y="568" width="345" height="45"/>
+                                <color key="backgroundColor" red="0.090196078430000007" green="0.17254901959999999" blue="0.2470588235" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="qrm-j3-xRe"/>
+                                    <constraint firstAttribute="width" constant="345" id="qrs-3M-1j5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="下一单元">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="regBtn:" destination="Hj2-ub-FRy" eventType="touchUpInside" id="fTZ-V3-5zi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vnf-Qq-kbr" firstAttribute="top" secondItem="bBF-Wj-4OY" secondAttribute="bottom" constant="16" id="0US-Es-uOa"/>
+                            <constraint firstItem="bBF-Wj-4OY" firstAttribute="centerX" secondItem="7W7-0B-KaQ" secondAttribute="centerX" id="4fk-6O-LfE"/>
+                            <constraint firstItem="ETm-wZ-UZa" firstAttribute="top" secondItem="f6Q-kW-TEQ" secondAttribute="bottom" constant="45" id="A2G-8B-IYB"/>
+                            <constraint firstItem="vnf-Qq-kbr" firstAttribute="centerX" secondItem="7W7-0B-KaQ" secondAttribute="centerX" id="ILo-ei-3xf"/>
+                            <constraint firstItem="f6Q-kW-TEQ" firstAttribute="top" secondItem="n1G-5d-4BH" secondAttribute="bottom" constant="152" id="sJH-jy-quw"/>
+                            <constraint firstItem="bBF-Wj-4OY" firstAttribute="top" secondItem="ETm-wZ-UZa" secondAttribute="bottom" constant="166" id="uiJ-sz-cNY"/>
+                            <constraint firstItem="ETm-wZ-UZa" firstAttribute="centerX" secondItem="7W7-0B-KaQ" secondAttribute="centerX" id="vDS-l1-WuW"/>
+                            <constraint firstItem="f6Q-kW-TEQ" firstAttribute="centerX" secondItem="7W7-0B-KaQ" secondAttribute="centerX" id="vco-nn-OdI"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wez-41-Bwk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2205.5" y="1868.5"/>
         </scene>
     </scenes>
     <resources>
@@ -1217,11 +1301,13 @@
         <image name="data" width="25" height="25"/>
         <image name="gpst" width="22" height="22"/>
         <image name="取消按钮" width="22" height="22"/>
+        <image name="完成-0" width="100" height="100"/>
         <image name="我的错题" width="150" height="150"/>
         <image name="设置" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="SS9-il-s0P"/>
         <segue reference="7mJ-Ni-5ky"/>
+        <segue reference="tc1-Yx-1gD"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -17,8 +17,8 @@
 
 @implementation SegmentVC
 - (IBAction)Segments:(id)sender {
-    UISegmentedControl *segmentControl = sender;
-    switch (segmentControl.selectedSegmentIndex) {
+    UISegmentedControl *segmentedControl = sender;
+    switch (segmentedControl.selectedSegmentIndex) {
         case 0:
             self.UnitView.hidden = NO;
             break;

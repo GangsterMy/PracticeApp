@@ -11,6 +11,7 @@
 @interface FaultVC ()
 @property (weak, nonatomic) IBOutlet UIView *noneFault;
 @property (weak, nonatomic) IBOutlet UIView *haveFault;
+@property (weak, nonatomic) IBOutlet UILabel *faultNum;
 
 
 @end
@@ -22,6 +23,12 @@
     
     _haveFault.hidden = NO;
     _noneFault.hidden = YES;
+    
+    
+//    _faultNum.layer.shadowColor = [UIColor colorWithRed:224.0 green:224.0 blue:224.0 alpha:0.6].CGColor;
+//    _faultNum.layer.shadowOffset = CGSizeMake(4.0, 1.0);
+//    _faultNum.layer.shadowOpacity = 1.0;
+//    _faultNum.layer.shadowRadius = 10;
     
     
 //    if (none) {
