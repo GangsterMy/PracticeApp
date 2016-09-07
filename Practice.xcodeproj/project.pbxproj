@@ -36,6 +36,7 @@
 		0FBC33D11D72C6F8005A9E96 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBC33CF1D72C6F8005A9E96 /* MOBFoundation.framework */; };
 		0FBC33D21D72C6F8005A9E96 /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBC33D01D72C6F8005A9E96 /* SMS_SDK.framework */; };
 		0FBC33D41D72CA11005A9E96 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBC33D31D72CA11005A9E96 /* libz.1.dylib */; };
+		0FFCE9B11D7FECA400135D6B /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 0FFCE9B01D7FECA400135D6B /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		0FBC33CF1D72C6F8005A9E96 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
 		0FBC33D01D72C6F8005A9E96 /* SMS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMS_SDK.framework; sourceTree = "<group>"; };
 		0FBC33D31D72CA11005A9E96 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = /usr/lib/libz.1.dylib; sourceTree = "<absolute>"; };
+		0FFCE9B01D7FECA400135D6B /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 		0FBC33B51D7011EA005A9E96 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				0FFCE9B01D7FECA400135D6B /* Podfile */,
 				0F21A5461D767E72006F5EB3 /* Trash */,
 				0FBC33CE1D72C6F8005A9E96 /* SMS_SDK */,
 				0FBC33B91D7011EA005A9E96 /* AppDelegate.h */,
@@ -264,6 +267,7 @@
 			files = (
 				0FBC33C61D7011EA005A9E96 /* LaunchScreen.storyboard in Resources */,
 				0FBC33C31D7011EA005A9E96 /* Assets.xcassets in Resources */,
+				0FFCE9B11D7FECA400135D6B /* Podfile in Resources */,
 				0FBC33C11D7011EA005A9E96 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

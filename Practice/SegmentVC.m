@@ -16,6 +16,10 @@
 @end
 
 @implementation SegmentVC
+- (IBAction)safariBtn:(id)sender {
+    //www.gpst.cn
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.gpst.cn"]];
+}
 - (IBAction)Segments:(id)sender {
     UISegmentedControl *segmentedControl = sender;
     switch (segmentedControl.selectedSegmentIndex) {
