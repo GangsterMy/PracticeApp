@@ -10,4 +10,6 @@
 
 @interface RegisterVC : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *phoneNum;
+
 @end

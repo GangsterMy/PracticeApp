@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface VertificationVC : UIViewController
-
+@property (nonatomic, copy)NSString *phoneNum;
 @end

@@ -617,7 +617,7 @@
                                     <constraint firstAttribute="width" constant="263" id="zoL-SC-cL7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDf-mt-Fmz">
                                 <rect key="frame" x="15" y="247" width="345" height="45"/>
@@ -637,7 +637,6 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="regBtn:" destination="Hj2-ub-FRy" eventType="touchUpInside" id="932-a6-nKS"/>
-                                    <segue destination="mal-j8-YEo" kind="show" id="eoY-nD-hCh"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入您的手机号" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0t-O2-fYx">
@@ -680,7 +679,7 @@
         <!--VertVC-->
         <scene sceneID="YbK-Lj-Q2Z">
             <objects>
-                <viewController id="mal-j8-YEo" userLabel="VertVC" customClass="VertificationVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VertificationVC" id="mal-j8-YEo" userLabel="VertVC" customClass="VertificationVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tFn-xX-wlB"/>
                         <viewControllerLayoutGuide type="bottom" id="5Tc-dS-dlE"/>
@@ -689,13 +688,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="验证码已发送" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oV-Fa-n5t">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="验证码已发送" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8oV-Fa-n5t">
                                 <rect key="frame" x="128" y="94" width="120" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.090196078430000007" green="0.17254901959999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Efx-hB-Hoo">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Efx-hB-Hoo">
                                 <rect key="frame" x="15" y="163" width="238" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="YAV-gk-3Lt"/>
@@ -705,7 +704,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="重获验证码" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mUA-vc-G8b">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="重获验证码" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mUA-vc-G8b">
                                 <rect key="frame" x="260" y="163" width="100" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="7hh-q6-NXh"/>
@@ -715,10 +714,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6K2-ik-NFk">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6K2-ik-NFk">
                                 <rect key="frame" x="260" y="163" width="100" height="44"/>
+                                <connections>
+                                    <action selector="getCodeBtn:" destination="mal-j8-YEo" eventType="touchUpInside" id="Jgl-LO-i5a"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPQ-VE-2n0">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPQ-VE-2n0">
                                 <rect key="frame" x="15" y="247" width="345" height="45"/>
                                 <color key="backgroundColor" red="0.090196078430000007" green="0.17254901959999999" blue="0.2470588235" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -735,7 +737,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="regBtn:" destination="Hj2-ub-FRy" eventType="touchUpInside" id="2qe-GJ-5m1"/>
+                                    <action selector="sendCodeBtn:" destination="mal-j8-YEo" eventType="touchUpInside" id="hgg-W9-1tG"/>
                                     <segue destination="blr-78-mHQ" kind="show" id="7mJ-Ni-5ky"/>
                                 </connections>
                             </button>
@@ -758,6 +760,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="注册" id="3uc-mB-tQF"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="vertificationCode" destination="Efx-hB-Hoo" id="i9c-50-NMZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APu-US-sNp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -766,7 +771,7 @@
         <!--SetSecrect-->
         <scene sceneID="gUk-HA-zqL">
             <objects>
-                <viewController id="blr-78-mHQ" userLabel="SetSecrect" customClass="SetSecretVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SetSecretVC" id="blr-78-mHQ" userLabel="SetSecrect" customClass="SetSecretVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9nz-P6-aMa"/>
                         <viewControllerLayoutGuide type="bottom" id="za3-f1-YuL"/>
@@ -775,7 +780,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kWf-AH-yf4">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kWf-AH-yf4">
                                 <rect key="frame" x="15" y="74" width="345" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="345" id="qdO-uA-poP"/>
@@ -785,7 +790,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请确认密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DVp-Ez-ACS">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请确认密码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DVp-Ez-ACS">
                                 <rect key="frame" x="15" y="128" width="345" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="Dz0-hZ-cEA"/>
@@ -795,7 +800,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGJ-oa-meT">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGJ-oa-meT">
                                 <rect key="frame" x="15" y="212" width="345" height="45"/>
                                 <color key="backgroundColor" red="0.090196078430000007" green="0.17254901959999999" blue="0.2470588235" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -1409,7 +1414,7 @@
         <image name="设置" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="SS9-il-s0P"/>
+        <segue reference="MCA-G4-sU1"/>
         <segue reference="7mJ-Ni-5ky"/>
         <segue reference="4XN-58-MKQ"/>
     </inferredMetricsTieBreakers>

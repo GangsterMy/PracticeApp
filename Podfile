@@ -6,5 +6,6 @@ target 'Practice' do
   # use_frameworks!
 
   # Pods for Practice
+pod 'AFNetworking', '~> 3.0'
 
 end
