@@ -9,5 +9,13 @@
 #import "SetSecretVC.h"
 
 @implementation SetSecretVC
+- (IBAction)Tap:(id)sender {
+    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
 
 @end

@@ -18,18 +18,24 @@
 @end
 
 @implementation LoginVC
+
 - (IBAction)clearAccount:(id)sender {
     _accountTF.text = @"";
 }
 - (IBAction)clearPwd:(id)sender {
     _pwdTF.text = @"";
 }
+- (IBAction)Tap:(id)sender {
+    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+}
 
-
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     
     _accountTF.rightView = _accountClear;
     _accountTF.rightViewMode = UITextFieldViewModeWhileEditing;
@@ -55,7 +61,12 @@
 - (CGRect)editingRectForBounds:(CGRect)bounds {
     return CGRectInset(bounds, 50, 10);
 }
-/*
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
+}
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation

@@ -7,5 +7,6 @@ target 'Practice' do
 
   # Pods for Practice
 pod 'AFNetworking', '~> 3.0'
+pod 'IQKeyboardManager'
 
 end

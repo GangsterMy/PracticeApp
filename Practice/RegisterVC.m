@@ -11,14 +11,24 @@
 #import "VertificationVC.h"
 #import <SMS_SDK/SMSSDK.h>
 
-@interface RegisterVC () <UITextFieldDelegate>
-//@property (weak, nonatomic) IBOutlet UITextField *phoneNum;
+@interface RegisterVC ()
 
 @end
 
 @implementation RegisterVC
 - (IBAction)regBtn:(id)sender {
     [self showlAlert];
+}
+- (IBAction)Tap:(id)sender {
+    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+//    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    if ( self.navigationController.childViewControllers.count > 1 ) {
+        [self.navigationController setNavigationBarHidden:NO animated:YES];
+    }
 }
 
 -(void)viewDidLoad {
@@ -56,6 +66,12 @@
     [alertController addAction:otherAction];
     
     [self presentViewController:alertController animated:YES completion:nil];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
 }
 
 @end
