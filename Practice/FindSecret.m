@@ -7,15 +7,30 @@
 //
 
 #import "FindSecret.h"
+#import "LoginVC.h"
+#import <SMS_SDK/SMSSDK.h>
+#import "SetSecretVC.h"
 
 @interface FindSecret ()
 @property (weak, nonatomic) IBOutlet UITextField *phoneNum;
 @property (weak, nonatomic) IBOutlet UITextField *vertificationCode;
-
-
 @end
 
 @implementation FindSecret
+- (IBAction)getCode:(id)sender {
+    [self showAlert];
+}
+- (IBAction)sendCode:(id)sender {
+    [SMSSDK commitVerificationCode:_vertificationCode.text phoneNumber:_phoneNum.text zone:@"86" result:^(NSError *error) {
+        if (!error) {
+            PALog(@"验证成功");
+            [self showCodeAlert];
+        } else {
+            PALog(@"错误信息:%@", error);
+        }
+    }];
+
+}
 - (IBAction)Tap:(id)sender {
     [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
 }
@@ -30,19 +45,63 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
-    UIButton *button = [_phoneNum valueForKey:@"_clearButton"];
-    [button setImage:[UIImage imageNamed:@"取消按钮"] forState:UIControlStateNormal];
-    [button setImage:[UIImage imageNamed:@"删除"] forState:UIControlStateHighlighted];
-    _phoneNum.clearButtonMode = UITextFieldViewModeWhileEditing;
+    [self clearButton:_phoneNum];
 }
 
-//-(void)clearBtn:(UIButton *)button {
-//    UIButton *button = [_phoneNum valueForKey:@"_clearButton"];
-//    [button setImage:[UIImage imageNamed:@"取消按钮"] forState:UIControlStateNormal];
-//    [button setImage:[UIImage imageNamed:@"删除"] forState:UIControlStateHighlighted];
-//    _phoneNum.clearButtonMode = UITextFieldViewModeWhileEditing;
-//}
+-(void)showAlert {
+    NSString *title = @"请确认手机号码";
+    NSString *message = [NSString stringWithFormat:@"我们将发送短信验证至您的手机:%@", _phoneNum.text];
+    NSString *cancelButtonTitle = @"取消";
+    NSString *otherButtonTitle = @"好";
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    
+    // Create the actions.
+    UIAlertAction *cancelAction = [UIAlertAction actionWithTitle:cancelButtonTitle style:UIAlertActionStyleCancel handler:nil];
+    
+    UIAlertAction *otherAction = [UIAlertAction actionWithTitle:otherButtonTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        
+        [SMSSDK getVerificationCodeByMethod:0 phoneNumber:_phoneNum.text zone:@"86" customIdentifier:nil result:^(NSError *error) {
+            if (!error) {
+                PALog(@"获取验证码成功");
+            } else {
+                PALog(@"获取验证码失败");
+            }
+        }];
+    }];
+    
+    [alertController addAction:cancelAction];
+    [alertController addAction:otherAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+}
 
+-(void)showCodeAlert {
+    NSString *title = @"验证成功";
+    NSString *message = @"请设置新的密码!";
+    NSString *okBtn = @"好";
+    
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+    
+    // Create the actions.
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:okBtn style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        LoginVC *logVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginVC"];
+        logVC.phoneNum = _phoneNum.text;
+        SetSecretVC *setVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SetSecretVC"];
+        [self.navigationController pushViewController:setVC animated:YES];
+    }];
+    
+    [alertController addAction:okAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+}
+
+-(void)clearButton:(UITextField *)textField {
+    UIButton *clearBtn = [textField valueForKey:@"_clearButton"];
+    [clearBtn setImage:[UIImage imageNamed:@"取消按钮"] forState:UIControlStateNormal];
+    [clearBtn setImage:[UIImage imageNamed:@"删除"] forState:UIControlStateHighlighted];
+    textField.clearButtonMode = UITextFieldViewModeWhileEditing;
+}
 #pragma mark - UITextFieldDelegate
 
 -(BOOL)textFieldShouldReturn:(UITextField *)textField {

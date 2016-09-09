@@ -51,6 +51,8 @@
         [SMSSDK getVerificationCodeByMethod:0 phoneNumber:_phoneNum zone:@"86" customIdentifier:nil result:^(NSError *error) {
             if (!error) {
                 PALog(@"再次获取验证码成功");
+                SetSecretVC *setVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SetSecretVC"];
+                [self.navigationController pushViewController:setVC animated:YES];
             } else {
                 PALog(@"再次获取验证码失败");
             }

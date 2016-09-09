@@ -41,7 +41,7 @@
                                 </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="4"/>
@@ -283,7 +283,7 @@
                                 </constraints>
                                 <color key="textColor" red="0.090196078430000007" green="0.17254901959999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                                 <connections>
                                     <outlet property="delegate" destination="9aY-bV-ijQ" id="faa-XQ-Cj9"/>
                                 </connections>
@@ -296,12 +296,12 @@
                                 </constraints>
                                 <color key="textColor" red="0.090196078430000007" green="0.17254901959999999" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <outlet property="delegate" destination="9aY-bV-ijQ" id="IO2-af-qIK"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="重获验证码" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JHH-uo-cRK">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="获取验证码" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JHH-uo-cRK">
                                 <rect key="frame" x="260" y="84" width="100" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="XT3-H3-SPy"/>
@@ -313,6 +313,9 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85b-Ll-Ily">
                                 <rect key="frame" x="260" y="84" width="100" height="44"/>
+                                <connections>
+                                    <action selector="getCode:" destination="9aY-bV-ijQ" eventType="touchUpInside" id="HKx-d0-fP7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Syq-Qw-nkf">
                                 <rect key="frame" x="15" y="168" width="345" height="45"/>
@@ -331,8 +334,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="regBtn:" destination="Hj2-ub-FRy" eventType="touchUpInside" id="2Pe-2o-eSG"/>
-                                    <segue destination="blr-78-mHQ" kind="show" id="t5E-SK-Nsa"/>
+                                    <action selector="sendCode:" destination="9aY-bV-ijQ" eventType="touchUpInside" id="Xnb-rb-38b"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -621,7 +623,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="regBtn:" destination="Hj2-ub-FRy" eventType="touchUpInside" id="cCE-gf-gjw"/>
                                     <segue destination="l0M-UY-LzI" kind="show" id="MCA-G4-sU1"/>
                                 </connections>
                             </button>
@@ -647,6 +648,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="设置密码" id="etX-Bg-QLa"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="confirmPwd" destination="DVp-Ez-ACS" id="IPQ-Iz-e4G"/>
+                        <outlet property="setPwd" destination="kWf-AH-yf4" id="pMu-xM-xrz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ATP-VW-APW" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="dCV-Mx-HSd">

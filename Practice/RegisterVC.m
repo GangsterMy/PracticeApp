@@ -34,6 +34,7 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
+    [self clearButton:_phoneNum];
     
 }
 
@@ -66,6 +67,13 @@
     [alertController addAction:otherAction];
     
     [self presentViewController:alertController animated:YES completion:nil];
+}
+
+-(void)clearButton:(UITextField *)textField {
+    UIButton *clearBtn = [textField valueForKey:@"_clearButton"];
+    [clearBtn setImage:[UIImage imageNamed:@"取消按钮"] forState:UIControlStateNormal];
+    [clearBtn setImage:[UIImage imageNamed:@"删除"] forState:UIControlStateHighlighted];
+    textField.clearButtonMode = UITextFieldViewModeWhileEditing;
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField

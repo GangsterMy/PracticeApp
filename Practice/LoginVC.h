@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface LoginVC : UIViewController
-
+@property (nonatomic, copy) NSString *phoneNum;
 @end

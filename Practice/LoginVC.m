@@ -14,7 +14,6 @@
 @property (weak, nonatomic) IBOutlet iconTextField *pwdTF;
 @property (weak, nonatomic) IBOutlet UIButton *accountClear;
 @property (weak, nonatomic) IBOutlet UIButton *pwdClear;
-
 @end
 
 @implementation LoginVC
@@ -37,6 +36,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _accountTF.text = self.phoneNum;
+
     _accountTF.rightView = _accountClear;
     _accountTF.rightViewMode = UITextFieldViewModeWhileEditing;
     
@@ -74,6 +75,6 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end
