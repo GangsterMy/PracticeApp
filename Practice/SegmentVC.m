@@ -7,15 +7,38 @@
 //
 
 #import "SegmentVC.h"
+#import "SetSecretVC.h"
+#import "LoginVC.h"
 
 @interface SegmentVC ()
 @property (weak, nonatomic) IBOutlet UIView *FaultView;
 @property (weak, nonatomic) IBOutlet UIView *UnitView;
-
+@property (weak, nonatomic) IBOutlet UIView *DropDownMenu;
 
 @end
 
 @implementation SegmentVC
+- (IBAction)resetSecret:(id)sender {
+    SetSecretVC *setVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SetSecretVC"];
+    [self.navigationController pushViewController:setVC animated:YES];
+}
+- (IBAction)resignAccount:(id)sender {
+    LoginVC *logVC = [self.storyboard instantiateViewControllerWithIdentifier:@"LoginVC"];
+    [self.navigationController pushViewController:logVC animated:YES];
+}
+- (IBAction)settingBtn:(id)sender {
+    _DropDownMenu.hidden = NO;
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(hideDropDwonMenu)];
+    [self.view addGestureRecognizer:tapGesture];
+}
+
+-(void)hideDropDwonMenu {
+     _DropDownMenu.hidden = YES;
+    for (UITapGestureRecognizer *tapGesture in self.view.gestureRecognizers) {
+        [self.view removeGestureRecognizer:tapGesture];
+    }
+}
+
 - (IBAction)safariBtn:(id)sender {
     //www.gpst.cn
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.gpst.cn"]];
@@ -31,6 +54,15 @@
             break;
         default:
             break;
+    }
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    _DropDownMenu.hidden = YES;
+    //    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    if ( self.navigationController.childViewControllers.count > 1 ) {
+        [self.navigationController setNavigationBarHidden:NO animated:YES];
     }
 }
 

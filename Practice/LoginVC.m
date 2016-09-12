@@ -30,19 +30,21 @@
 
 -(void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
     [self.navigationController setNavigationBarHidden:YES animated:YES];
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
     
     _accountTF.text = self.phoneNum;
-
+    
     _accountTF.rightView = _accountClear;
     _accountTF.rightViewMode = UITextFieldViewModeWhileEditing;
     
     _pwdTF.rightView = _pwdClear;
     _pwdTF.rightViewMode = UITextFieldViewModeWhileEditing;
+
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
 
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
 

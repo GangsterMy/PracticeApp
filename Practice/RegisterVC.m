@@ -29,6 +29,7 @@
     if ( self.navigationController.childViewControllers.count > 1 ) {
         [self.navigationController setNavigationBarHidden:NO animated:YES];
     }
+    
 }
 
 -(void)viewDidLoad {
@@ -51,16 +52,16 @@
     
     UIAlertAction *otherAction = [UIAlertAction actionWithTitle:otherButtonTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
-        [SMSSDK getVerificationCodeByMethod:0 phoneNumber:_phoneNum.text zone:@"86" customIdentifier:nil result:^(NSError *error) {
-            if (!error) {
-                PALog(@"获取验证码成功");
+//        [SMSSDK getVerificationCodeByMethod:0 phoneNumber:_phoneNum.text zone:@"86" customIdentifier:nil result:^(NSError *error) {
+//            if (!error) {
+//                PALog(@"获取验证码成功");
                 VertificationVC *vertVC = [self.storyboard instantiateViewControllerWithIdentifier:@"VertificationVC"];
                 [self.navigationController pushViewController:vertVC animated:YES];
                 vertVC.phoneNum = _phoneNum.text;
-            } else {
-                PALog(@"获取验证码失败");
-            }
-        }];
+//            } else {
+//                PALog(@"获取验证码失败");
+//            }
+//        }];
     }];
     
     [alertController addAction:cancelAction];
@@ -76,6 +77,7 @@
     textField.clearButtonMode = UITextFieldViewModeWhileEditing;
 }
 
+#pragma mark UITextFieldDelegate
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];

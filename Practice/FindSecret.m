@@ -21,14 +21,14 @@
     [self showAlert];
 }
 - (IBAction)sendCode:(id)sender {
-    [SMSSDK commitVerificationCode:_vertificationCode.text phoneNumber:_phoneNum.text zone:@"86" result:^(NSError *error) {
-        if (!error) {
+//    [SMSSDK commitVerificationCode:_vertificationCode.text phoneNumber:_phoneNum.text zone:@"86" result:^(NSError *error) {
+//        if (!error) {
             PALog(@"验证成功");
             [self showCodeAlert];
-        } else {
-            PALog(@"错误信息:%@", error);
-        }
-    }];
+//        } else {
+//            PALog(@"错误信息:%@", error);
+//        }
+//    }];
 
 }
 - (IBAction)Tap:(id)sender {
@@ -61,13 +61,13 @@
     
     UIAlertAction *otherAction = [UIAlertAction actionWithTitle:otherButtonTitle style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
         
-        [SMSSDK getVerificationCodeByMethod:0 phoneNumber:_phoneNum.text zone:@"86" customIdentifier:nil result:^(NSError *error) {
-            if (!error) {
-                PALog(@"获取验证码成功");
-            } else {
-                PALog(@"获取验证码失败");
-            }
-        }];
+//        [SMSSDK getVerificationCodeByMethod:0 phoneNumber:_phoneNum.text zone:@"86" customIdentifier:nil result:^(NSError *error) {
+//            if (!error) {
+//                PALog(@"获取验证码成功");
+//            } else {
+//                PALog(@"获取验证码失败");
+//            }
+//        }];
     }];
     
     [alertController addAction:cancelAction];
