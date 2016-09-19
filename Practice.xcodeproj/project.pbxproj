@@ -21,7 +21,6 @@
 		0FBA07231D79581B0061D773 /* FaultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07221D79581B0061D773 /* FaultVC.m */; };
 		0FBA07261D795F990061D773 /* UnitTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07251D795F990061D773 /* UnitTVC.m */; };
 		0FBA07291D7D0AA50061D773 /* NavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07281D7D0AA50061D773 /* NavController.m */; };
-		0FBA072C1D7D1DA80061D773 /* PracticeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA072B1D7D1DA80061D773 /* PracticeVC.m */; };
 		0FBA072F1D7D20CB0061D773 /* CheckFaultCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA072E1D7D20CB0061D773 /* CheckFaultCVC.m */; };
 		0FBC33B81D7011EA005A9E96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC33B71D7011EA005A9E96 /* main.m */; };
 		0FBC33BB1D7011EA005A9E96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC33BA1D7011EA005A9E96 /* AppDelegate.m */; };
@@ -62,8 +61,6 @@
 		0FBA07251D795F990061D773 /* UnitTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitTVC.m; sourceTree = "<group>"; };
 		0FBA07271D7D0AA50061D773 /* NavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavController.h; sourceTree = "<group>"; };
 		0FBA07281D7D0AA50061D773 /* NavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavController.m; sourceTree = "<group>"; };
-		0FBA072A1D7D1DA80061D773 /* PracticeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PracticeVC.h; sourceTree = "<group>"; };
-		0FBA072B1D7D1DA80061D773 /* PracticeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PracticeVC.m; sourceTree = "<group>"; };
 		0FBA072D1D7D20CB0061D773 /* CheckFaultCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckFaultCVC.h; sourceTree = "<group>"; };
 		0FBA072E1D7D20CB0061D773 /* CheckFaultCVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckFaultCVC.m; sourceTree = "<group>"; };
 		0FBC33B31D7011EA005A9E96 /* Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Practice.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,8 +197,6 @@
 				0FBA07221D79581B0061D773 /* FaultVC.m */,
 				0FE844031D868D10009264B6 /* PracticeCVC.h */,
 				0FE844041D868D10009264B6 /* PracticeCVC.m */,
-				0FBA072A1D7D1DA80061D773 /* PracticeVC.h */,
-				0FBA072B1D7D1DA80061D773 /* PracticeVC.m */,
 				0FBA072D1D7D20CB0061D773 /* CheckFaultCVC.h */,
 				0FBA072E1D7D20CB0061D773 /* CheckFaultCVC.m */,
 			);
@@ -348,7 +343,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FBA07261D795F990061D773 /* UnitTVC.m in Sources */,
-				0FBA072C1D7D1DA80061D773 /* PracticeVC.m in Sources */,
 				0FBA07291D7D0AA50061D773 /* NavController.m in Sources */,
 				0FBC33BB1D7011EA005A9E96 /* AppDelegate.m in Sources */,
 				0FBA070E1D7879550061D773 /* VertificationVC.m in Sources */,
