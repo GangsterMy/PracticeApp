@@ -13,20 +13,24 @@
 		0F248CCE1D72CA8D00821B5F /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F248CCD1D72CA8D00821B5F /* libstdc++.6.0.9.dylib */; };
 		0F248CD01D72CA9E00821B5F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F248CCF1D72CA9E00821B5F /* MessageUI.framework */; };
 		0F248CD21D72CAAD00821B5F /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F248CD11D72CAAD00821B5F /* JavaScriptCore.framework */; };
+		0F2544721D92712700939746 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F2544711D92712700939746 /* Data.plist */; };
+		0F8902EE1D95085400563242 /* FinishVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8902ED1D95085400563242 /* FinishVC.m */; };
+		0F8902F21D95182000563242 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F8902F01D95182000563242 /* Model.xcdatamodeld */; };
+		0F8902F71D95191900563242 /* CoreDataTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8902F61D95191900563242 /* CoreDataTVC.m */; };
+		0F8902FB1D9520DD00563242 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8902FA1D9520DD00563242 /* CoreDataStack.m */; };
 		0FBA070B1D77DEA20061D773 /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA070A1D77DEA20061D773 /* RegisterVC.m */; };
 		0FBA070E1D7879550061D773 /* VertificationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA070D1D7879550061D773 /* VertificationVC.m */; };
 		0FBA07111D7918F10061D773 /* SetSecretVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07101D7918F10061D773 /* SetSecretVC.m */; };
 		0FBA07141D7918FD0061D773 /* FindSecret.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07131D7918FD0061D773 /* FindSecret.m */; };
 		0FBA07171D792D830061D773 /* SegmentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07161D792D830061D773 /* SegmentVC.m */; };
 		0FBA07231D79581B0061D773 /* FaultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07221D79581B0061D773 /* FaultVC.m */; };
-		0FBA07261D795F990061D773 /* UnitTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07251D795F990061D773 /* UnitTVC.m */; };
+		0FBA07261D795F990061D773 /* UnitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07251D795F990061D773 /* UnitVC.m */; };
 		0FBA07291D7D0AA50061D773 /* NavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07281D7D0AA50061D773 /* NavController.m */; };
 		0FBA072F1D7D20CB0061D773 /* CheckFaultCVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA072E1D7D20CB0061D773 /* CheckFaultCVC.m */; };
 		0FBC33B81D7011EA005A9E96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC33B71D7011EA005A9E96 /* main.m */; };
 		0FBC33BB1D7011EA005A9E96 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBC33BA1D7011EA005A9E96 /* AppDelegate.m */; };
 		0FBC33C11D7011EA005A9E96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FBC33BF1D7011EA005A9E96 /* Main.storyboard */; };
 		0FBC33C31D7011EA005A9E96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FBC33C21D7011EA005A9E96 /* Assets.xcassets */; };
-		0FBC33C61D7011EA005A9E96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FBC33C41D7011EA005A9E96 /* LaunchScreen.storyboard */; };
 		0FBC33D11D72C6F8005A9E96 /* MOBFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBC33CF1D72C6F8005A9E96 /* MOBFoundation.framework */; };
 		0FBC33D21D72C6F8005A9E96 /* SMS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBC33D01D72C6F8005A9E96 /* SMS_SDK.framework */; };
 		0FBC33D41D72CA11005A9E96 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FBC33D31D72CA11005A9E96 /* libz.1.dylib */; };
@@ -45,6 +49,14 @@
 		0F248CCD1D72CA8D00821B5F /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "/usr/lib/libstdc++.6.0.9.dylib"; sourceTree = "<absolute>"; };
 		0F248CCF1D72CA9E00821B5F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		0F248CD11D72CAAD00821B5F /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		0F2544711D92712700939746 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		0F8902EC1D95085400563242 /* FinishVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishVC.h; sourceTree = "<group>"; };
+		0F8902ED1D95085400563242 /* FinishVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishVC.m; sourceTree = "<group>"; };
+		0F8902F11D95182000563242 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		0F8902F51D95191900563242 /* CoreDataTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTVC.h; sourceTree = "<group>"; };
+		0F8902F61D95191900563242 /* CoreDataTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTVC.m; sourceTree = "<group>"; };
+		0F8902F91D9520DD00563242 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		0F8902FA1D9520DD00563242 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
 		0FBA07091D77DEA20061D773 /* RegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
 		0FBA070A1D77DEA20061D773 /* RegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
 		0FBA070C1D7879550061D773 /* VertificationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertificationVC.h; sourceTree = "<group>"; };
@@ -57,8 +69,8 @@
 		0FBA07161D792D830061D773 /* SegmentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentVC.m; sourceTree = "<group>"; };
 		0FBA07211D79581B0061D773 /* FaultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaultVC.h; sourceTree = "<group>"; };
 		0FBA07221D79581B0061D773 /* FaultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaultVC.m; sourceTree = "<group>"; };
-		0FBA07241D795F990061D773 /* UnitTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitTVC.h; sourceTree = "<group>"; };
-		0FBA07251D795F990061D773 /* UnitTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitTVC.m; sourceTree = "<group>"; };
+		0FBA07241D795F990061D773 /* UnitVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnitVC.h; sourceTree = "<group>"; };
+		0FBA07251D795F990061D773 /* UnitVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnitVC.m; sourceTree = "<group>"; };
 		0FBA07271D7D0AA50061D773 /* NavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavController.h; sourceTree = "<group>"; };
 		0FBA07281D7D0AA50061D773 /* NavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavController.m; sourceTree = "<group>"; };
 		0FBA072D1D7D20CB0061D773 /* CheckFaultCVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckFaultCVC.h; sourceTree = "<group>"; };
@@ -69,7 +81,6 @@
 		0FBC33BA1D7011EA005A9E96 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		0FBC33C01D7011EA005A9E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FBC33C21D7011EA005A9E96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0FBC33C51D7011EA005A9E96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FBC33C71D7011EA005A9E96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FBC33CD1D71D60A005A9E96 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0FBC33CF1D72C6F8005A9E96 /* MOBFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MOBFoundation.framework; sourceTree = "<group>"; };
@@ -104,6 +115,111 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F8902E51D95008400563242 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				0F21A54A1D76B446006F5EB3 /* LoginVC.h */,
+				0F21A54B1D76B446006F5EB3 /* LoginVC.m */,
+			);
+			name = Log;
+			sourceTree = "<group>";
+		};
+		0F8902E71D9500CD00563242 /* Reg */ = {
+			isa = PBXGroup;
+			children = (
+				0FBA07091D77DEA20061D773 /* RegisterVC.h */,
+				0FBA070A1D77DEA20061D773 /* RegisterVC.m */,
+				0FBA070C1D7879550061D773 /* VertificationVC.h */,
+				0FBA070D1D7879550061D773 /* VertificationVC.m */,
+				0FBA070F1D7918F10061D773 /* SetSecretVC.h */,
+				0FBA07101D7918F10061D773 /* SetSecretVC.m */,
+			);
+			name = Reg;
+			sourceTree = "<group>";
+		};
+		0F8902E81D95047D00563242 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				0FBA07121D7918FD0061D773 /* FindSecret.h */,
+				0FBA07131D7918FD0061D773 /* FindSecret.m */,
+			);
+			name = Find;
+			sourceTree = "<group>";
+		};
+		0F8902E91D95062000563242 /* Seg */ = {
+			isa = PBXGroup;
+			children = (
+				0FBA07151D792D830061D773 /* SegmentVC.h */,
+				0FBA07161D792D830061D773 /* SegmentVC.m */,
+				0FBA07241D795F990061D773 /* UnitVC.h */,
+				0FBA07251D795F990061D773 /* UnitVC.m */,
+				0FBA07211D79581B0061D773 /* FaultVC.h */,
+				0FBA07221D79581B0061D773 /* FaultVC.m */,
+			);
+			name = Seg;
+			sourceTree = "<group>";
+		};
+		0F8902EA1D9507E600563242 /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				0FBA07271D7D0AA50061D773 /* NavController.h */,
+				0FBA07281D7D0AA50061D773 /* NavController.m */,
+			);
+			name = Nav;
+			sourceTree = "<group>";
+		};
+		0F8902EB1D9507F700563242 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				0F21A5501D76B65D006F5EB3 /* iconTextField.h */,
+				0F21A5511D76B65D006F5EB3 /* iconTextField.m */,
+				0FE843F61D83BB44009264B6 /* clearButton.h */,
+				0FE843F71D83BB44009264B6 /* clearButton.m */,
+			);
+			name = Tool;
+			sourceTree = "<group>";
+		};
+		0F8902EF1D950DBD00563242 /* QA */ = {
+			isa = PBXGroup;
+			children = (
+				0FE844031D868D10009264B6 /* PracticeCVC.h */,
+				0FE844041D868D10009264B6 /* PracticeCVC.m */,
+				0FBA072D1D7D20CB0061D773 /* CheckFaultCVC.h */,
+				0FBA072E1D7D20CB0061D773 /* CheckFaultCVC.m */,
+				0F8902EC1D95085400563242 /* FinishVC.h */,
+				0F8902ED1D95085400563242 /* FinishVC.m */,
+			);
+			name = QA;
+			sourceTree = "<group>";
+		};
+		0F8902F31D95182A00563242 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0F8902F01D95182000563242 /* Model.xcdatamodeld */,
+				0F8902F81D95192700563242 /* Model */,
+				0F8902F41D9518B100563242 /* Generic FRC */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		0F8902F41D9518B100563242 /* Generic FRC */ = {
+			isa = PBXGroup;
+			children = (
+				0F8902F51D95191900563242 /* CoreDataTVC.h */,
+				0F8902F61D95191900563242 /* CoreDataTVC.m */,
+			);
+			name = "Generic FRC";
+			sourceTree = "<group>";
+		};
+		0F8902F81D95192700563242 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F8902F91D9520DD00563242 /* CoreDataStack.h */,
+				0F8902FA1D9520DD00563242 /* CoreDataStack.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		0FBC33AA1D7011EA005A9E96 = {
 			isa = PBXGroup;
 			children = (
@@ -126,14 +242,10 @@
 		0FBC33B51D7011EA005A9E96 /* Practice */ = {
 			isa = PBXGroup;
 			children = (
+				0F8902F31D95182A00563242 /* CoreData */,
 				0FE843FF1D86540C009264B6 /* Main */,
 				0FFCE9B21D7FEF5000135D6B /* Class */,
-				0FBC33CE1D72C6F8005A9E96 /* SMS_SDK */,
-				0FBC33BF1D7011EA005A9E96 /* Main.storyboard */,
 				0FBC33C21D7011EA005A9E96 /* Assets.xcassets */,
-				0FBC33C41D7011EA005A9E96 /* LaunchScreen.storyboard */,
-				0FBC33CD1D71D60A005A9E96 /* PrefixHeader.pch */,
-				0FBC33C71D7011EA005A9E96 /* Info.plist */,
 				0FBC33B61D7011EA005A9E96 /* Supporting Files */,
 			);
 			path = Practice;
@@ -142,6 +254,7 @@
 		0FBC33B61D7011EA005A9E96 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0FBC33CE1D72C6F8005A9E96 /* SMS_SDK */,
 				0FBC33B71D7011EA005A9E96 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -164,14 +277,14 @@
 		0FE843FF1D86540C009264B6 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				0FBC33BF1D7011EA005A9E96 /* Main.storyboard */,
+				0FBC33C71D7011EA005A9E96 /* Info.plist */,
+				0F2544711D92712700939746 /* Data.plist */,
+				0FBC33CD1D71D60A005A9E96 /* PrefixHeader.pch */,
 				0FBC33B91D7011EA005A9E96 /* AppDelegate.h */,
 				0FBC33BA1D7011EA005A9E96 /* AppDelegate.m */,
-				0FBA07271D7D0AA50061D773 /* NavController.h */,
-				0FBA07281D7D0AA50061D773 /* NavController.m */,
-				0F21A5501D76B65D006F5EB3 /* iconTextField.h */,
-				0F21A5511D76B65D006F5EB3 /* iconTextField.m */,
-				0FE843F61D83BB44009264B6 /* clearButton.h */,
-				0FE843F71D83BB44009264B6 /* clearButton.m */,
+				0F8902EB1D9507F700563242 /* Tool */,
+				0F8902EA1D9507E600563242 /* Nav */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -179,26 +292,11 @@
 		0FFCE9B21D7FEF5000135D6B /* Class */ = {
 			isa = PBXGroup;
 			children = (
-				0F21A54A1D76B446006F5EB3 /* LoginVC.h */,
-				0F21A54B1D76B446006F5EB3 /* LoginVC.m */,
-				0FBA07091D77DEA20061D773 /* RegisterVC.h */,
-				0FBA070A1D77DEA20061D773 /* RegisterVC.m */,
-				0FBA070C1D7879550061D773 /* VertificationVC.h */,
-				0FBA070D1D7879550061D773 /* VertificationVC.m */,
-				0FBA070F1D7918F10061D773 /* SetSecretVC.h */,
-				0FBA07101D7918F10061D773 /* SetSecretVC.m */,
-				0FBA07121D7918FD0061D773 /* FindSecret.h */,
-				0FBA07131D7918FD0061D773 /* FindSecret.m */,
-				0FBA07151D792D830061D773 /* SegmentVC.h */,
-				0FBA07161D792D830061D773 /* SegmentVC.m */,
-				0FBA07241D795F990061D773 /* UnitTVC.h */,
-				0FBA07251D795F990061D773 /* UnitTVC.m */,
-				0FBA07211D79581B0061D773 /* FaultVC.h */,
-				0FBA07221D79581B0061D773 /* FaultVC.m */,
-				0FE844031D868D10009264B6 /* PracticeCVC.h */,
-				0FE844041D868D10009264B6 /* PracticeCVC.m */,
-				0FBA072D1D7D20CB0061D773 /* CheckFaultCVC.h */,
-				0FBA072E1D7D20CB0061D773 /* CheckFaultCVC.m */,
+				0F8902E51D95008400563242 /* Log */,
+				0F8902E71D9500CD00563242 /* Reg */,
+				0F8902E81D95047D00563242 /* Find */,
+				0F8902E91D95062000563242 /* Seg */,
+				0F8902EF1D950DBD00563242 /* QA */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -280,9 +378,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FBC33C61D7011EA005A9E96 /* LaunchScreen.storyboard in Resources */,
 				0FBC33C31D7011EA005A9E96 /* Assets.xcassets in Resources */,
 				0FFCE9B11D7FECA400135D6B /* Podfile in Resources */,
+				0F2544721D92712700939746 /* Data.plist in Resources */,
 				0FBC33C11D7011EA005A9E96 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FBA07261D795F990061D773 /* UnitTVC.m in Sources */,
+				0FBA07261D795F990061D773 /* UnitVC.m in Sources */,
 				0FBA07291D7D0AA50061D773 /* NavController.m in Sources */,
 				0FBC33BB1D7011EA005A9E96 /* AppDelegate.m in Sources */,
 				0FBA070E1D7879550061D773 /* VertificationVC.m in Sources */,
@@ -350,13 +448,17 @@
 				0FBA07231D79581B0061D773 /* FaultVC.m in Sources */,
 				0FBA070B1D77DEA20061D773 /* RegisterVC.m in Sources */,
 				0F21A54C1D76B446006F5EB3 /* LoginVC.m in Sources */,
+				0F8902F21D95182000563242 /* Model.xcdatamodeld in Sources */,
 				0FBC33B81D7011EA005A9E96 /* main.m in Sources */,
+				0F8902F71D95191900563242 /* CoreDataTVC.m in Sources */,
 				0FE843F81D83BB44009264B6 /* clearButton.m in Sources */,
 				0FBA07111D7918F10061D773 /* SetSecretVC.m in Sources */,
 				0FBA072F1D7D20CB0061D773 /* CheckFaultCVC.m in Sources */,
 				0FBA07171D792D830061D773 /* SegmentVC.m in Sources */,
 				0FBA07141D7918FD0061D773 /* FindSecret.m in Sources */,
 				0FE844051D868D10009264B6 /* PracticeCVC.m in Sources */,
+				0F8902EE1D95085400563242 /* FinishVC.m in Sources */,
+				0F8902FB1D9520DD00563242 /* CoreDataStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,14 +471,6 @@
 				0FBC33C01D7011EA005A9E96 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0FBC33C41D7011EA005A9E96 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0FBC33C51D7011EA005A9E96 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -524,6 +618,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0F8902F01D95182000563242 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0F8902F11D95182000563242 /* Model.xcdatamodel */,
+			);
+			currentVersion = 0F8902F11D95182000563242 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0FBC33AB1D7011EA005A9E96 /* Project object */;
 }
