@@ -1,4 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15G1004" minimumToolsVersion="Xcode 7.0">
-    <elements/>
+    <entity name="Answer" representedClassName="Answer" syncable="YES">
+        <attribute name="rightAnswer" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userAnswer" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="question" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Question" inverseName="answer" inverseEntity="Question" syncable="YES"/>
+    </entity>
+    <entity name="Option" representedClassName="Option" syncable="YES">
+        <attribute name="a" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="b" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="c" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="d" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="question" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Question" inverseName="option" inverseEntity="Question" syncable="YES"/>
+    </entity>
+    <entity name="Question" representedClassName="Question" syncable="YES">
+        <attribute name="number" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="answer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Answer" inverseName="question" inverseEntity="Answer" syncable="YES"/>
+        <relationship name="option" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Option" inverseName="question" inverseEntity="Option" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Question" positionX="-317" positionY="18" width="128" height="103"/>
+        <element name="Option" positionX="-162" positionY="-117" width="128" height="118"/>
+        <element name="Answer" positionX="-452" positionY="-90" width="128" height="88"/>
+    </elements>
 </model>

@@ -72,10 +72,10 @@
     [super viewDidLoad];
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     
-    NSBundle *bundle = [NSBundle mainBundle];
-    NSString *filePath = [bundle pathForResource:@"Data" ofType:@"plist"];
-    self.data = [NSArray arrayWithContentsOfFile:filePath];
-    PALog(@"%@", self.data);
+//    NSBundle *bundle = [NSBundle mainBundle];
+//    NSString *filePath = [bundle pathForResource:@"Data" ofType:@"plist"];
+//    self.data = [NSArray arrayWithContentsOfFile:filePath];
+//    PALog(@"%@", self.data);
     
 }
 

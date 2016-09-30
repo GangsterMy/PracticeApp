@@ -7,11 +7,14 @@
 //
 
 #import "PracticeCVC.h"
+#import "CoreDataFRC.h"
+#import "CoreDataStack.h"
 
 @interface PracticeCVC () <UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, copy) NSArray *iconDefaultArr;
 @property (nonatomic, copy) NSArray *iconTrueArr;
 @property (nonatomic, copy) NSArray *iconFalseArr;
+@property (nonatomic, strong) NSArray *data;
 
 @end
 
@@ -21,12 +24,11 @@
 -(void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
-    
-    [self requestData];
+//    [self requestData];
 }
 
 -(void)requestData {
-    
+//    [[CoreDataStack sharedCoreDataStack] insertDataWithArray:data];
 }
 
 #pragma mark UICollectionViewController
@@ -38,8 +40,10 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *ID = @"practicecell";
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ID forIndexPath:indexPath];
-    
-    
+    if (!cell) {
+        cell = [[UICollectionViewCell alloc] init];
+    }
+        
     return cell;
 }
 

@@ -1,9 +1,9 @@
 //
 //  CoreDataStack.h
-//  Fanner
+//  Practice
 //
-//  Created by 赵麦 on 7/26/16.
-//  Copyright © 2016 歹徒. All rights reserved.
+//  Created by 赵麦 on 9/26/16.
+//  Copyright © 2016 Zmy. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -16,5 +16,6 @@
 +(instancetype)sharedCoreDataStack;
 
 -(void)saveContext;
+-(NSManagedObjectContext *)context;
 
 @end

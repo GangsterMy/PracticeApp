@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CoreDataFRC.h"
 
-@interface PracticeCVC : UICollectionViewController
+@interface PracticeCVC : CoreDataFRC
 
 @end

@@ -16,8 +16,15 @@
 		0F2544721D92712700939746 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F2544711D92712700939746 /* Data.plist */; };
 		0F8902EE1D95085400563242 /* FinishVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8902ED1D95085400563242 /* FinishVC.m */; };
 		0F8902F21D95182000563242 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0F8902F01D95182000563242 /* Model.xcdatamodeld */; };
-		0F8902F71D95191900563242 /* CoreDataTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8902F61D95191900563242 /* CoreDataTVC.m */; };
-		0F8902FB1D9520DD00563242 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8902FA1D9520DD00563242 /* CoreDataStack.m */; };
+		0F8902FE1D98E50E00563242 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8902FD1D98E50E00563242 /* CoreDataStack.m */; };
+		0F8903351D99089800563242 /* Answer+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89032A1D99089800563242 /* Answer+CoreDataProperties.m */; };
+		0F8903361D99089800563242 /* Answer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89032C1D99089800563242 /* Answer.m */; };
+		0F8903371D99089800563242 /* Option+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89032E1D99089800563242 /* Option+CoreDataProperties.m */; };
+		0F8903381D99089800563242 /* Option.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8903301D99089800563242 /* Option.m */; };
+		0F8903391D99089800563242 /* Question+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8903321D99089800563242 /* Question+CoreDataProperties.m */; };
+		0F89033A1D99089800563242 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F8903341D99089800563242 /* Question.m */; };
+		0F89033D1D9909EE00563242 /* CoreDataFRC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89033C1D9909EE00563242 /* CoreDataFRC.m */; };
+		0F8903401D991D8A00563242 /* CoreDataStack+Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F89033F1D991D8A00563242 /* CoreDataStack+Question.m */; };
 		0FBA070B1D77DEA20061D773 /* RegisterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA070A1D77DEA20061D773 /* RegisterVC.m */; };
 		0FBA070E1D7879550061D773 /* VertificationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA070D1D7879550061D773 /* VertificationVC.m */; };
 		0FBA07111D7918F10061D773 /* SetSecretVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FBA07101D7918F10061D773 /* SetSecretVC.m */; };
@@ -53,10 +60,24 @@
 		0F8902EC1D95085400563242 /* FinishVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinishVC.h; sourceTree = "<group>"; };
 		0F8902ED1D95085400563242 /* FinishVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinishVC.m; sourceTree = "<group>"; };
 		0F8902F11D95182000563242 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		0F8902F51D95191900563242 /* CoreDataTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTVC.h; sourceTree = "<group>"; };
-		0F8902F61D95191900563242 /* CoreDataTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTVC.m; sourceTree = "<group>"; };
-		0F8902F91D9520DD00563242 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
-		0F8902FA1D9520DD00563242 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		0F8902FC1D98E50E00563242 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		0F8902FD1D98E50E00563242 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		0F8903291D99089800563242 /* Answer+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Answer+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0F89032A1D99089800563242 /* Answer+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Answer+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0F89032B1D99089800563242 /* Answer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Answer.h; sourceTree = "<group>"; };
+		0F89032C1D99089800563242 /* Answer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Answer.m; sourceTree = "<group>"; };
+		0F89032D1D99089800563242 /* Option+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Option+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0F89032E1D99089800563242 /* Option+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Option+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0F89032F1D99089800563242 /* Option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Option.h; sourceTree = "<group>"; };
+		0F8903301D99089800563242 /* Option.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Option.m; sourceTree = "<group>"; };
+		0F8903311D99089800563242 /* Question+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Question+CoreDataProperties.h"; sourceTree = "<group>"; };
+		0F8903321D99089800563242 /* Question+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Question+CoreDataProperties.m"; sourceTree = "<group>"; };
+		0F8903331D99089800563242 /* Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
+		0F8903341D99089800563242 /* Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Question.m; sourceTree = "<group>"; };
+		0F89033B1D9909EE00563242 /* CoreDataFRC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataFRC.h; sourceTree = "<group>"; };
+		0F89033C1D9909EE00563242 /* CoreDataFRC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataFRC.m; sourceTree = "<group>"; };
+		0F89033E1D991D8A00563242 /* CoreDataStack+Question.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CoreDataStack+Question.h"; sourceTree = "<group>"; };
+		0F89033F1D991D8A00563242 /* CoreDataStack+Question.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CoreDataStack+Question.m"; sourceTree = "<group>"; };
 		0FBA07091D77DEA20061D773 /* RegisterVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterVC.h; sourceTree = "<group>"; };
 		0FBA070A1D77DEA20061D773 /* RegisterVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterVC.m; sourceTree = "<group>"; };
 		0FBA070C1D7879550061D773 /* VertificationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VertificationVC.h; sourceTree = "<group>"; };
@@ -195,7 +216,8 @@
 		0F8902F31D95182A00563242 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				0F8902F01D95182000563242 /* Model.xcdatamodeld */,
+				0F8902FC1D98E50E00563242 /* CoreDataStack.h */,
+				0F8902FD1D98E50E00563242 /* CoreDataStack.m */,
 				0F8902F81D95192700563242 /* Model */,
 				0F8902F41D9518B100563242 /* Generic FRC */,
 			);
@@ -205,8 +227,10 @@
 		0F8902F41D9518B100563242 /* Generic FRC */ = {
 			isa = PBXGroup;
 			children = (
-				0F8902F51D95191900563242 /* CoreDataTVC.h */,
-				0F8902F61D95191900563242 /* CoreDataTVC.m */,
+				0F89033B1D9909EE00563242 /* CoreDataFRC.h */,
+				0F89033C1D9909EE00563242 /* CoreDataFRC.m */,
+				0F89033E1D991D8A00563242 /* CoreDataStack+Question.h */,
+				0F89033F1D991D8A00563242 /* CoreDataStack+Question.m */,
 			);
 			name = "Generic FRC";
 			sourceTree = "<group>";
@@ -214,8 +238,19 @@
 		0F8902F81D95192700563242 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0F8902F91D9520DD00563242 /* CoreDataStack.h */,
-				0F8902FA1D9520DD00563242 /* CoreDataStack.m */,
+				0F8903291D99089800563242 /* Answer+CoreDataProperties.h */,
+				0F89032A1D99089800563242 /* Answer+CoreDataProperties.m */,
+				0F89032B1D99089800563242 /* Answer.h */,
+				0F89032C1D99089800563242 /* Answer.m */,
+				0F89032D1D99089800563242 /* Option+CoreDataProperties.h */,
+				0F89032E1D99089800563242 /* Option+CoreDataProperties.m */,
+				0F89032F1D99089800563242 /* Option.h */,
+				0F8903301D99089800563242 /* Option.m */,
+				0F8903311D99089800563242 /* Question+CoreDataProperties.h */,
+				0F8903321D99089800563242 /* Question+CoreDataProperties.m */,
+				0F8903331D99089800563242 /* Question.h */,
+				0F8903341D99089800563242 /* Question.m */,
+				0F8902F01D95182000563242 /* Model.xcdatamodeld */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -442,23 +477,30 @@
 			files = (
 				0FBA07261D795F990061D773 /* UnitVC.m in Sources */,
 				0FBA07291D7D0AA50061D773 /* NavController.m in Sources */,
+				0F8903381D99089800563242 /* Option.m in Sources */,
+				0F89033D1D9909EE00563242 /* CoreDataFRC.m in Sources */,
 				0FBC33BB1D7011EA005A9E96 /* AppDelegate.m in Sources */,
+				0F8903401D991D8A00563242 /* CoreDataStack+Question.m in Sources */,
 				0FBA070E1D7879550061D773 /* VertificationVC.m in Sources */,
 				0F21A5521D76B65D006F5EB3 /* iconTextField.m in Sources */,
 				0FBA07231D79581B0061D773 /* FaultVC.m in Sources */,
 				0FBA070B1D77DEA20061D773 /* RegisterVC.m in Sources */,
+				0F8903371D99089800563242 /* Option+CoreDataProperties.m in Sources */,
 				0F21A54C1D76B446006F5EB3 /* LoginVC.m in Sources */,
 				0F8902F21D95182000563242 /* Model.xcdatamodeld in Sources */,
 				0FBC33B81D7011EA005A9E96 /* main.m in Sources */,
-				0F8902F71D95191900563242 /* CoreDataTVC.m in Sources */,
+				0F8903351D99089800563242 /* Answer+CoreDataProperties.m in Sources */,
 				0FE843F81D83BB44009264B6 /* clearButton.m in Sources */,
+				0F8903391D99089800563242 /* Question+CoreDataProperties.m in Sources */,
 				0FBA07111D7918F10061D773 /* SetSecretVC.m in Sources */,
 				0FBA072F1D7D20CB0061D773 /* CheckFaultCVC.m in Sources */,
 				0FBA07171D792D830061D773 /* SegmentVC.m in Sources */,
 				0FBA07141D7918FD0061D773 /* FindSecret.m in Sources */,
 				0FE844051D868D10009264B6 /* PracticeCVC.m in Sources */,
 				0F8902EE1D95085400563242 /* FinishVC.m in Sources */,
-				0F8902FB1D9520DD00563242 /* CoreDataStack.m in Sources */,
+				0F89033A1D99089800563242 /* Question.m in Sources */,
+				0F8902FE1D98E50E00563242 /* CoreDataStack.m in Sources */,
+				0F8903361D99089800563242 /* Answer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
